@@ -9,6 +9,8 @@
 #include <thread>
 
 // 这是一段话用来测试github推送功能是否正常
+// 这是一段话用来测试github推送功能是否正常
+// 这是一段话用来测试github推送功能是否正常
 
 Redis::Redis() : _publish_context(nullptr), _subscribe_context(nullptr) {
 }
