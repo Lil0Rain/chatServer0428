@@ -61,7 +61,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "",
 			"projects" : 
 			[
 				{
@@ -85,14 +85,14 @@
 				{
 					"directoryIndex" : 3,
 					"id" : "ChatClient::@8ca63c80a879d0067daa",
-					"jsonFile" : "target-ChatClient-Debug-5fed7480e6f4b4e32622.json",
+					"jsonFile" : "target-ChatClient-d2c2bcf9f5eebdd7ffda.json",
 					"name" : "ChatClient",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "ChatServer::@2804e40980a64c7d7ad1",
-					"jsonFile" : "target-ChatServer-Debug-3eebfafed754eb92e8ea.json",
+					"jsonFile" : "target-ChatServer-cb6913fb4caede528597.json",
 					"name" : "ChatServer",
 					"projectIndex" : 0
 				}
