@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/home/userme/ChatServer/bin/ChatServer"
+			"path" : "/home/userme/ChatServer/chatServer0428/bin/ChatServer"
 		}
 	],
 	"backtrace" : 1,
@@ -82,34 +82,34 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -g  "
+					"fragment" : "-g  "
 				}
 			],
 			"includes" : 
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/userme/ChatServer/include"
+					"path" : "/home/userme/ChatServer/chatServer0428/include"
 				},
 				{
 					"backtrace" : 4,
-					"path" : "/home/userme/ChatServer/include/server"
+					"path" : "/home/userme/ChatServer/chatServer0428/include/server"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "/home/userme/ChatServer/include/server/model"
+					"path" : "/home/userme/ChatServer/chatServer0428/include/server/model"
 				},
 				{
 					"backtrace" : 6,
-					"path" : "/home/userme/ChatServer/include/db"
+					"path" : "/home/userme/ChatServer/chatServer0428/include/db"
 				},
 				{
 					"backtrace" : 7,
-					"path" : "/home/userme/ChatServer/include/server/redis"
+					"path" : "/home/userme/ChatServer/chatServer0428/include/server/redis"
 				},
 				{
 					"backtrace" : 8,
-					"path" : "/home/userme/ChatServer/thirdparty"
+					"path" : "/home/userme/ChatServer/chatServer0428/thirdparty"
 				},
 				{
 					"backtrace" : 9,
@@ -137,7 +137,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g -g",
+				"fragment" : "-g",
 				"role" : "flags"
 			},
 			{

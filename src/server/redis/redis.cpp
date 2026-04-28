@@ -1,4 +1,4 @@
-#include "redis.hpp"
+#include "server/redis/redis.hpp"
 
 #include <hiredis/hiredis.h>
 #include <hiredis/read.h>
