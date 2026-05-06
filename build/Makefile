@@ -136,6 +136,19 @@ ChatClient/fast:
 	$(MAKE) -f src/client/CMakeFiles/ChatClient.dir/build.make src/client/CMakeFiles/ChatClient.dir/build
 .PHONY : ChatClient/fast
 
+#=============================================================================
+# Target rules for targets named ConnectionPool
+
+# Build rule for target.
+ConnectionPool: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 ConnectionPool
+.PHONY : ConnectionPool
+
+# fast build rule for target.
+ConnectionPool/fast:
+	$(MAKE) -f src/ConnectionPool/CMakeFiles/ConnectionPool.dir/build.make src/ConnectionPool/CMakeFiles/ConnectionPool.dir/build
+.PHONY : ConnectionPool/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -146,6 +159,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... ChatServer"
 	@echo "... ChatClient"
+	@echo "... ConnectionPool"
 .PHONY : help
 
 

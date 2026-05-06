@@ -199,6 +199,7 @@ ChatServer_EXTERNAL_OBJECTS =
 ../bin/ChatServer: src/server/CMakeFiles/ChatServer.dir/model/userMuduo.cpp.o
 ../bin/ChatServer: src/server/CMakeFiles/ChatServer.dir/redis/redis.cpp.o
 ../bin/ChatServer: src/server/CMakeFiles/ChatServer.dir/build.make
+../bin/ChatServer: src/ConnectionPool/libConnectionPool.a
 ../bin/ChatServer: src/server/CMakeFiles/ChatServer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/userme/ChatServer/chatServer0428/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable ../../../bin/ChatServer"
 	cd /home/userme/ChatServer/chatServer0428/build/src/server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ChatServer.dir/link.txt --verbose=$(VERBOSE)

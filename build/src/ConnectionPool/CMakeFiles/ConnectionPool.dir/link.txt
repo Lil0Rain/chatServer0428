@@ -1,0 +1,2 @@
+/usr/bin/ar qc libConnectionPool.a  CMakeFiles/ConnectionPool.dir/CommonConnectionPool.cpp.o CMakeFiles/ConnectionPool.dir/Connection.cpp.o
+/usr/bin/ranlib libConnectionPool.a

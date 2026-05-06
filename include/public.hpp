@@ -1,3 +1,4 @@
+#include <iostream>
 #pragma once
 #ifndef CHATSERVER_PUBLIC_HPP
 #define CHATSERVER_PUBLIC_HPP
@@ -21,4 +22,5 @@ enum EnMsgType {
 	LOGOUT_MSG_ACK
 };
 
+#define LOG(str) std::cout << __FILE__ << " ; " << __LINE__ << " " << __TIMESTAMP__ << " ; " << str << std::endl
 #endif

@@ -6,5 +6,5 @@ CXX_FLAGS = -g -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/userme/ChatServer/chatServer0428/include -I/home/userme/ChatServer/chatServer0428/include/server -I/home/userme/ChatServer/chatServer0428/include/server/model -I/home/userme/ChatServer/chatServer0428/include/db -I/home/userme/ChatServer/chatServer0428/include/server/redis -I/home/userme/ChatServer/chatServer0428/thirdparty -I/usr/include/mysql 
+CXX_INCLUDES = -I/home/userme/ChatServer/chatServer0428/include -I/home/userme/ChatServer/chatServer0428/include/server -I/home/userme/ChatServer/chatServer0428/include/server/model -I/home/userme/ChatServer/chatServer0428/include/db -I/home/userme/ChatServer/chatServer0428/include/server/redis -I/home/userme/ChatServer/chatServer0428/include/ConnectionPool -I/home/userme/ChatServer/chatServer0428/thirdparty -I/usr/include/mysql 
 

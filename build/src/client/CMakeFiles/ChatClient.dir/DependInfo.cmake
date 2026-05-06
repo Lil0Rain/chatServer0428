@@ -15,6 +15,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include/server/model"
   "../include/db"
   "../include/server/redis"
+  "../include/ConnectionPool"
   "../thirdparty"
   "/usr/include/mysql"
   )

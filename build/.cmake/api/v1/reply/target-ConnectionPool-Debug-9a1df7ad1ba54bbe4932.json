@@ -1,0 +1,173 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "src/ConnectionPool/libConnectionPool.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"include_directories"
+		],
+		"files" : 
+		[
+			"src/ConnectionPool/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 13,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 15,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 16,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 18,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 19,
+				"parent" : 2
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -g  "
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 3,
+					"path" : "/home/userme/ChatServer/chatServer0428/include"
+				},
+				{
+					"backtrace" : 4,
+					"path" : "/home/userme/ChatServer/chatServer0428/include/server"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/userme/ChatServer/chatServer0428/include/server/model"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/userme/ChatServer/chatServer0428/include/db"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "/home/userme/ChatServer/chatServer0428/include/server/redis"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "/home/userme/ChatServer/chatServer0428/include/ConnectionPool"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "/home/userme/ChatServer/chatServer0428/thirdparty"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "/usr/include/mysql"
+				}
+			],
+			"language" : "CXX",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"id" : "ConnectionPool::@9a8ff176bdff6bb393fb",
+	"name" : "ConnectionPool",
+	"nameOnDisk" : "libConnectionPool.a",
+	"paths" : 
+	{
+		"build" : "src/ConnectionPool",
+		"source" : "src/ConnectionPool"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/ConnectionPool/CommonConnectionPool.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/ConnectionPool/Connection.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

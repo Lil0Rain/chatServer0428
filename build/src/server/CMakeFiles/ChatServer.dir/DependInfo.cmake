@@ -23,12 +23,14 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "../include/server/model"
   "../include/db"
   "../include/server/redis"
+  "../include/ConnectionPool"
   "../thirdparty"
   "/usr/include/mysql"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
+  "/home/userme/ChatServer/chatServer0428/build/src/ConnectionPool/CMakeFiles/ConnectionPool.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

@@ -1,6 +1,7 @@
 #include "friendMuduo.hpp"
 
 #include <iostream>
+#include <string>
 
 #include "db.h"
 
