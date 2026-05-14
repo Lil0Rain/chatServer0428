@@ -80,14 +80,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/userme/ChatServer/chatServer0428/build/CMakeFiles /home/userme/ChatServer/chatServer0428/build/CMakeFiles/progress.marks
-	$(MAKE) -f CMakeFiles/Makefile2 all
+	cd /home/userme/ChatServer/chatServer0428/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/userme/ChatServer/chatServer0428/build/CMakeFiles /home/userme/ChatServer/chatServer0428/build/bench/CMakeFiles/progress.marks
+	cd /home/userme/ChatServer/chatServer0428/build && $(MAKE) -f CMakeFiles/Makefile2 bench/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/userme/ChatServer/chatServer0428/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) -f CMakeFiles/Makefile2 clean
+	cd /home/userme/ChatServer/chatServer0428/build && $(MAKE) -f CMakeFiles/Makefile2 bench/clean
 .PHONY : clean
 
 # The main clean target
@@ -97,70 +97,60 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/userme/ChatServer/chatServer0428/build && $(MAKE) -f CMakeFiles/Makefile2 bench/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) -f CMakeFiles/Makefile2 preinstall
+	cd /home/userme/ChatServer/chatServer0428/build && $(MAKE) -f CMakeFiles/Makefile2 bench/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/userme/ChatServer/chatServer0428/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named ChatServer
+# Convenience name for target.
+bench/CMakeFiles/ConnectionPoolBench.dir/rule:
+	cd /home/userme/ChatServer/chatServer0428/build && $(MAKE) -f CMakeFiles/Makefile2 bench/CMakeFiles/ConnectionPoolBench.dir/rule
+.PHONY : bench/CMakeFiles/ConnectionPoolBench.dir/rule
 
-# Build rule for target.
-ChatServer: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ChatServer
-.PHONY : ChatServer
+# Convenience name for target.
+ConnectionPoolBench: bench/CMakeFiles/ConnectionPoolBench.dir/rule
 
-# fast build rule for target.
-ChatServer/fast:
-	$(MAKE) -f src/server/CMakeFiles/ChatServer.dir/build.make src/server/CMakeFiles/ChatServer.dir/build
-.PHONY : ChatServer/fast
-
-#=============================================================================
-# Target rules for targets named ChatClient
-
-# Build rule for target.
-ChatClient: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ChatClient
-.PHONY : ChatClient
-
-# fast build rule for target.
-ChatClient/fast:
-	$(MAKE) -f src/client/CMakeFiles/ChatClient.dir/build.make src/client/CMakeFiles/ChatClient.dir/build
-.PHONY : ChatClient/fast
-
-#=============================================================================
-# Target rules for targets named ConnectionPool
-
-# Build rule for target.
-ConnectionPool: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ConnectionPool
-.PHONY : ConnectionPool
-
-# fast build rule for target.
-ConnectionPool/fast:
-	$(MAKE) -f src/ConnectionPool/CMakeFiles/ConnectionPool.dir/build.make src/ConnectionPool/CMakeFiles/ConnectionPool.dir/build
-.PHONY : ConnectionPool/fast
-
-#=============================================================================
-# Target rules for targets named ConnectionPoolBench
-
-# Build rule for target.
-ConnectionPoolBench: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 ConnectionPoolBench
 .PHONY : ConnectionPoolBench
 
 # fast build rule for target.
 ConnectionPoolBench/fast:
-	$(MAKE) -f bench/CMakeFiles/ConnectionPoolBench.dir/build.make bench/CMakeFiles/ConnectionPoolBench.dir/build
+	cd /home/userme/ChatServer/chatServer0428/build && $(MAKE) -f bench/CMakeFiles/ConnectionPoolBench.dir/build.make bench/CMakeFiles/ConnectionPoolBench.dir/build
 .PHONY : ConnectionPoolBench/fast
+
+connection_pool_bench.o: connection_pool_bench.cpp.o
+
+.PHONY : connection_pool_bench.o
+
+# target to build an object file
+connection_pool_bench.cpp.o:
+	cd /home/userme/ChatServer/chatServer0428/build && $(MAKE) -f bench/CMakeFiles/ConnectionPoolBench.dir/build.make bench/CMakeFiles/ConnectionPoolBench.dir/connection_pool_bench.cpp.o
+.PHONY : connection_pool_bench.cpp.o
+
+connection_pool_bench.i: connection_pool_bench.cpp.i
+
+.PHONY : connection_pool_bench.i
+
+# target to preprocess a source file
+connection_pool_bench.cpp.i:
+	cd /home/userme/ChatServer/chatServer0428/build && $(MAKE) -f bench/CMakeFiles/ConnectionPoolBench.dir/build.make bench/CMakeFiles/ConnectionPoolBench.dir/connection_pool_bench.cpp.i
+.PHONY : connection_pool_bench.cpp.i
+
+connection_pool_bench.s: connection_pool_bench.cpp.s
+
+.PHONY : connection_pool_bench.s
+
+# target to generate assembly for a file
+connection_pool_bench.cpp.s:
+	cd /home/userme/ChatServer/chatServer0428/build && $(MAKE) -f bench/CMakeFiles/ConnectionPoolBench.dir/build.make bench/CMakeFiles/ConnectionPoolBench.dir/connection_pool_bench.cpp.s
+.PHONY : connection_pool_bench.cpp.s
 
 # Help Target
 help:
@@ -170,10 +160,10 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... ChatServer"
-	@echo "... ChatClient"
-	@echo "... ConnectionPool"
 	@echo "... ConnectionPoolBench"
+	@echo "... connection_pool_bench.o"
+	@echo "... connection_pool_bench.i"
+	@echo "... connection_pool_bench.s"
 .PHONY : help
 
 
@@ -185,6 +175,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/userme/ChatServer/chatServer0428/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

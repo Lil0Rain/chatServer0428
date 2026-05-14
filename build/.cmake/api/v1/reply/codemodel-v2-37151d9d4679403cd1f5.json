@@ -8,7 +8,8 @@
 					"build" : ".",
 					"childIndexes" : 
 					[
-						1
+						1,
+						5
 					],
 					"minimumCMakeVersion" : 
 					{
@@ -74,6 +75,20 @@
 					[
 						2
 					]
+				},
+				{
+					"build" : "bench",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "bench",
+					"targetIndexes" : 
+					[
+						3
+					]
 				}
 			],
 			"name" : "Debug",
@@ -86,14 +101,16 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5
 					],
 					"name" : "chat",
 					"targetIndexes" : 
 					[
 						0,
 						1,
-						2
+						2,
+						3
 					]
 				}
 			],
@@ -118,6 +135,13 @@
 					"id" : "ConnectionPool::@9a8ff176bdff6bb393fb",
 					"jsonFile" : "target-ConnectionPool-Debug-9a1df7ad1ba54bbe4932.json",
 					"name" : "ConnectionPool",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 5,
+					"id" : "ConnectionPoolBench::@6768a448b85562cd4f0b",
+					"jsonFile" : "target-ConnectionPoolBench-Debug-0b18cdb0ab4c16c876b0.json",
+					"name" : "ConnectionPoolBench",
 					"projectIndex" : 0
 				}
 			]

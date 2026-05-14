@@ -11,3 +11,6 @@
 /home/userme/ChatServer/chatServer0428/build/src/ConnectionPool/CMakeFiles/rebuild_cache.dir
 /home/userme/ChatServer/chatServer0428/build/src/ConnectionPool/CMakeFiles/edit_cache.dir
 /home/userme/ChatServer/chatServer0428/build/src/ConnectionPool/CMakeFiles/ConnectionPool.dir
+/home/userme/ChatServer/chatServer0428/build/bench/CMakeFiles/rebuild_cache.dir
+/home/userme/ChatServer/chatServer0428/build/bench/CMakeFiles/edit_cache.dir
+/home/userme/ChatServer/chatServer0428/build/bench/CMakeFiles/ConnectionPoolBench.dir

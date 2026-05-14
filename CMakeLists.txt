@@ -20,3 +20,4 @@ include_directories (/usr/include/mysql)
 
 #指定要搜索的子目录
 add_subdirectory(src)
+add_subdirectory(bench)

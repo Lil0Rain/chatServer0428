@@ -58,5 +58,10 @@
   "directory": "/home/userme/ChatServer/chatServer0428/build/src/ConnectionPool",
   "command": "/usr/bin/g++   -I/home/userme/ChatServer/chatServer0428/include -I/home/userme/ChatServer/chatServer0428/include/server -I/home/userme/ChatServer/chatServer0428/include/server/model -I/home/userme/ChatServer/chatServer0428/include/db -I/home/userme/ChatServer/chatServer0428/include/server/redis -I/home/userme/ChatServer/chatServer0428/include/ConnectionPool -I/home/userme/ChatServer/chatServer0428/thirdparty -I/usr/include/mysql  -g -g   -o CMakeFiles/ConnectionPool.dir/Connection.cpp.o -c /home/userme/ChatServer/chatServer0428/src/ConnectionPool/Connection.cpp",
   "file": "/home/userme/ChatServer/chatServer0428/src/ConnectionPool/Connection.cpp"
+},
+{
+  "directory": "/home/userme/ChatServer/chatServer0428/build/bench",
+  "command": "/usr/bin/g++   -I/home/userme/ChatServer/chatServer0428/include -I/home/userme/ChatServer/chatServer0428/include/server -I/home/userme/ChatServer/chatServer0428/include/server/model -I/home/userme/ChatServer/chatServer0428/include/db -I/home/userme/ChatServer/chatServer0428/include/server/redis -I/home/userme/ChatServer/chatServer0428/include/ConnectionPool -I/home/userme/ChatServer/chatServer0428/thirdparty -I/usr/include/mysql  -g -g   -o CMakeFiles/ConnectionPoolBench.dir/connection_pool_bench.cpp.o -c /home/userme/ChatServer/chatServer0428/bench/connection_pool_bench.cpp",
+  "file": "/home/userme/ChatServer/chatServer0428/bench/connection_pool_bench.cpp"
 }
 ]
