@@ -4,4 +4,4 @@ target_include_directories(ConnectionPoolBench PRIVATE
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/include/ConnectionPool
 )
-target_link_libraries(ConnectionPoolBench ConnectionPool mysqlclient pthread)
+target_link_libraries(ConnectionPoolBench ConnectionPool mysqlclient ssl crypto dl resolv m rt pthread)

@@ -1,1 +1,1 @@
-/usr/bin/g++  -g -g  -rdynamic CMakeFiles/ConnectionPoolBench.dir/connection_pool_bench.cpp.o  -o ../../bin/ConnectionPoolBench  ../src/ConnectionPool/libConnectionPool.a -lmysqlclient -lpthread 
+/usr/bin/g++  -g -g   -static -rdynamic CMakeFiles/ConnectionPoolBench.dir/connection_pool_bench.cpp.o  -o ../../bin/ConnectionPoolBench  ../src/ConnectionPool/libConnectionPool.a -lmysqlclient -lssl -lcrypto -ldl -lresolv -lm -lrt -lpthread 
