@@ -4,8 +4,8 @@ project(chat)
 #配置编译选项
 set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} -g)
 
-# 静态链接——产出的可执行文件不依赖任何.so，方便部署到其他机器
-set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -static")
+# 静态链接 C++ 运行时库，保留 glibc 动态（保证 DNS 解析等功能正常）
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -static-libstdc++ -static-libgcc")
 
 #配置最终可执行文件输出的路径
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
@@ -24,3 +24,4 @@ include_directories (/usr/include/mysql)
 #指定要搜索的子目录
 add_subdirectory(src)
 add_subdirectory(bench)
+add_subdirectory(src/qt-client)

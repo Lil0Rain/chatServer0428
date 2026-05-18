@@ -36,6 +36,8 @@ void ChatService::clientCloseException(const TcpConnectionPtr &conn) {
 	// 这里还需要更新用户的状态信息，设置为offline
 	if (found) {
 		_userMuduo.updateState(userChanged);
+		// 通知好友自己下线
+		notifyFriendsStatus(userChanged.getId(), "offline");
 	}
 }
 
@@ -130,6 +132,9 @@ void ChatService::login(const TcpConnectionPtr &conn, const json &js, Timestamp 
 
 		// 订阅用户id的消息
 		_redis.subscribe(id);
+
+		// 通知好友自己上线
+		notifyFriendsStatus(id, "online");
 
 		json response;
 		response["msgid"] = LOGIN_MSG_ACK;
@@ -338,6 +343,9 @@ void ChatService::logout(const TcpConnectionPtr &conn, const json &js, Timestamp
 		}
 		_redis.unsubscribe(id);	 // 注销成功取消订阅用户id的消息
 
+		// 通知好友自己下线
+		notifyFriendsStatus(id, "offline");
+
 		json response;
 		response["msgid"] = LOGOUT_MSG_ACK;
 		response["errno"] = 0;	// 0表示没有错误
@@ -364,4 +372,24 @@ void ChatService::handleRedisSubscribeMessage(int channel, std::string message) 
 		return;
 	}
 	_offlineMsgMuduo.addOfflineMsg(channel, message);
+}
+
+// 好友状态变更时通知所有在线好友
+void ChatService::notifyFriendsStatus(int userId, const std::string &state) {
+	json js;
+	js["msgid"] = FRIEND_STATUS_MSG;
+	js["id"] = userId;
+	js["state"] = state;
+	std::string msg = js.dump();
+
+	vector<User> friends = _friendMuduo.query(userId);
+	lock_guard<mutex> lock(_connMutex);
+	for (auto &f : friends) {
+		auto it = _userConnMap.find(f.getId());
+		if (it != _userConnMap.end()) {
+			it->second->send(msg);
+		} else if (f.getState() == "online") {
+			_redis.publish(f.getId(), msg);
+		}
+	}
 }
