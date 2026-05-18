@@ -1,5 +1,6 @@
 # 编译中间文件
 build/
+compile_commands.json
 
 # 编译产物
 bin/

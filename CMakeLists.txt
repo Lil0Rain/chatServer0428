@@ -1,6 +1,9 @@
 cmake_minimum_required(VERSION 3.0)
 project(chat)
 
+# 生成 compile_commands.json 供 clangd/VSCode 使用
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+
 #配置编译选项
 set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} -g)
 
