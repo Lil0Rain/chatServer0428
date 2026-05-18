@@ -69,6 +69,9 @@ private:
 	friendMuduo _friendMuduo;
 	groupMuduo _groupMuduo;
 
+	// 通知好友状态变更
+	void notifyFriendsStatus(int userId, const std::string &state);
+
 	// redis对象
 	Redis _redis;
 };

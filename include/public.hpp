@@ -19,7 +19,8 @@ enum EnMsgType {
 	ADD_GROUP_MSG,	   // 加入群组消息10
 	GROUP_CHAT_MSG,	   // 群聊消息11
 	LOGOUT_MSG,		   // 用户注销消息12
-	LOGOUT_MSG_ACK
+	LOGOUT_MSG_ACK,
+	FRIEND_STATUS_MSG  // 好友状态变更通知 14
 };
 
 #define LOG(str) std::cout << __FILE__ << " ; " << __LINE__ << " " << __TIMESTAMP__ << " ; " << str << std::endl
